@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,43 +12,40 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Srisakdi|ZCOOL+QingKe+HuangYou" rel="stylesheet">
 </head>
+
 <body>
-  <header class="header clearfix">
-    <div class="header_inner inner">
+  <header class="header">
+    <div class="header_inner inner clearfix">
       <i class="fas fa-bolt"></i>
-      <p><a class="contact_button" href="#">Contact</a></p>
+      <p class="contact_button_phrase"><a class="button contact_button" href="#">Contact</a></p>
     </div>
   </header>
-  <main>
+  <main class="main">
     <!--theme-->
     <div class="theme">
       <div class="theme_inner inner">
         <h1 class="h1_title">Bolt Theme</h1>
-        <h2 class="h2_phrase_theme">FREE BOOTSTRAP THEMES</p>
-     </div>
+        <p class="p_phrase_theme">FREE BOOTSTRAP THEMES</p>
+      </div>
     </div>
-    <!--what we can do?※sectionはh1タグが推奨されているらしい、、、？-->
-    <section class="wwcd clearfix">
-      <div class="wwcd_innr inner">
-        <div class="wwcd_content">
-          <div class="wwcd_content_left">
-            <img src="img/iphone.png" alt="iphone">
-          </div>
-          <div class="wwcd_content_right">
-            <h3 class="h3 h3_phrase_wwcd">WHAT WE CAN DO?</h3>
-            <p class="phrase_wwcd">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
+    <!--what we can do?-->
+    <section class="wwcd">
+      <div class="wwcd_innr inner clearfix">
+        <div class="wwcd_content_left">
+          <img src="img/iphone.png" alt="iphone">
         </div>
-
+        <div class="wwcd_content_right">
+          <h2 class="h2_phrase_wwcd">WHAT WE CAN DO?</h2>
+          <p class="phrase_wwcd">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+            to make a type specimen book.</p>
+        </div>
       </div>
     </section>
     <!--latest work-->
     <article class="l-work">
       <div class="l-work_inner inner clearfix">
-        <h3 class="h3 h3_phrase_l-work">OUR LATEST WORK</h3>
-        <!--:nth-childでのやり方わからず、、、-->
+        <h3 class="h3_phrase_l-work">OUR LATEST WORK</h3>
         <div class="GlidLayout_img">
           <div class="l-work_img l-wrok_img1">
             <a href="#"><img src="img/01.jpg" alt=""></a>
@@ -70,39 +68,39 @@
         </div>
         <div class="l-work_bottom_all">
           <p class="phrase_l-work">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <p><a class="email_button" href="#">Email Me!</a></p>
+          <p class="email_button_phrase"><a class="button email_button" href="#">Email Me!</a></p>
         </div>
       </div>
     </article>
     <!--skills-->
     <section class="skills">
       <div class="skills_inner inner">
-        <h3 class="h3 h3_phrase_skills">OUR SKILLS</h3>
-        <table class="skills_table_all">
-          <tr class="skills_img_table">
-            <td class="skills_img skills_img1"><img src="img/circle_01.png" alt=""><p class="skills_img_phrase skills_img_phrase1">JavaScript</p></td>
-            <td class="skills_img skills_img2"><img src="img/circle_02.png" alt=""><p class="skills_img_phrase skills_img_phrase2">Bootstrap</p></td>
-            <td class="skills_img skills_img3"><img src="img/circle_03.png" alt=""><p class="skills_img_phrase skills_img_phrase3">WordPress</p></td>
-            <td class="skills_img skills_img4"><img src="img/circle_04.png" alt=""><p class="skills_img_phrase skills_img_phrase4">Photoshop</p></td>
-          </tr>
-        </table>
+        <h2 class="h2_phrase_skills">OUR SKILLS</h2>
+        <div class="skills_box">
+          <div><img src="img/circle_01.png" alt="">
+            <p class="skills_img_phrase skills_img_phrase1">JavaScript</p>
+          </div>
+          <div><img src="img/circle_02.png" alt="">
+            <p class="skills_img_phrase skills_img_phrase2">Bootstrap</p>
+          </div>
+          <div><img src="img/circle_03.png" alt="">
+            <p class="skills_img_phrase skills_img_phrase3">WordPress</p>
+          </div>
+          <div><img src="img/circle_04.png" alt="">
+            <p class="skills_img_phrase skills_img_phrase4">Photoshop</p>
+          </div>
+
+        </div>
+
       </div>
     </section>
     <!--SNS-->
     <nav class="sns">
       <div class="sns_inner inner">
-        <div class="sns_block facebook">
-          <i class="fab fa-facebook-f"><a href="#"></a></i>
-        </div>
-        <div class="sns_block ball">
-          <i class="fas fa-basketball-ball"><a href="#"></a></i>
-        </div>
-        <div class="sns_block Twitter">
-          <i class="fab fa-twitter"><a href="#"></a></i>
-        </div>
-        <div class="sns_block gmail">
-          <i class="fas fa-envelope"><a href="#"></a></i>
-        </div>
+        <a class="sns_block" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="sns_block" href="#"><i class="fas fa-basketball-ball"></i></a>
+        <a class="sns_block" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="sns_block" href="#"><i class="fas fa-envelope"></i></a>
       </div>
     </nav>
   </main>
@@ -113,4 +111,5 @@
   </footer>
 
 </body>
+
 </html>
