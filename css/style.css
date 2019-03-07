@@ -37,17 +37,27 @@ p{
   margin: auto;
 }
 
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*header,OLWのbutton共通style*/
+.button{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: #74cfae;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
 /*header*/
 .header{
   position:fixed;
   top:0;
   left:0;
-}
-
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .header_inner{
@@ -64,20 +74,11 @@ p{
 .contact_button_phrase{
   font-size: 12px;
   float: right;
+  padding-top: 15px;
 }
 
 .contact_button{
   padding: 14px 12px;
-
-}
-
-/*header,OLWのbutton共通style*/
-.button{
-  text-decoration: none;
-  transition: all 0.3s ease;
-  background-color: #74cfae;
-  color: #fff;
-  font-weight: bold;
 }
 
 
@@ -174,12 +175,11 @@ p{
 
 .email_button_phrase{
   font-size: 12px;
-
+  padding-top: 20px;
 }
 
 .email_button{
   padding: 14px 20px;
-  margin-top: 20px;
 
 }
 
