@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
-.main {
+body{
   font-family: "Raleway";
-  padding-top: 78px;
+}
+
+.main {
+  padding-top: 71px;
 }
 
 p {
   font-family: "Lato";
+}
+
+img{
+  vertical-align: bottom;
 }
 
 .header {
@@ -43,7 +50,7 @@ p {
 }
 
 .inner {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -145,7 +152,7 @@ p {
 .skills_img_phrase {
   color: #fff;
   font-size: 16px;
-  padding-top: 10px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -163,7 +170,7 @@ p {
 
 /*footer*/
 .footer_inner {
-  padding: 20px 15px 25px;
+  padding: 20px 0 25px;
 }
 
 .footer_phrase {
@@ -201,6 +208,8 @@ p {
     padding-top: 50px;
   }
 
+
+
   .wwcd_content_left {
     float: left;
     margin-left: 50px;
@@ -216,7 +225,7 @@ p {
     grid-template-rows: 300px 300px;
     grid-template-columns: 300px 300px 300px;
     grid-gap: 100px 90px;
-    padding: 40px 0 90px 0;
+    margin: 40px 0 90px;
   }
 
   .l-work_bottom_all {
@@ -242,7 +251,8 @@ p {
   .skills_box {
     display: flex;
     justify-content: space-between;
-    padding: 70px 36px 0 36px;
+    margin:70px auto 0;
+    width: 90%;
   }
 
   /*sns*/
@@ -292,20 +302,23 @@ p {
   }
 
   .wwcd_content_right {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   /*l-work*/
   .GlidLayout_img {
-    padding: 40px 0 80px;
+    margin: 40px 0 80px;
     grid-template-rows: 300px;
     grid-template-columns: 300px;
     justify-content: center;
   }
 
-  .l-work_img:nth-child(3) {
-    padding-bottom: 80px;
+  .l-work_img:nth-child(3n) {
+    margin-bottom: 80px;
   }
+.l-work_img:last-child{
+  margin-bottom: 0;
+}
 
   .l-work_bottom_all {
     justify-content: center;
@@ -334,15 +347,15 @@ p {
   }
 
   .skills_boxes {
-    padding-bottom: 88px;
+    margin-bottom: 88px;
   }
 
   .skills_boxes:first-child {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 
   .skills_boxes:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   /*sns*/
@@ -359,7 +372,7 @@ p {
 
 @media screen and (max-width:767px) {
 
-  /*　画面サイズが480pxからはここを読み込む　*/
+  /*　画面サイズが767pxまではここを読み込む　*/
 
   .inner {
     width: 97%;
@@ -373,39 +386,30 @@ p {
   /*ハンバーガーメニュー*/
   .hamburger {
     position: relative;
-    height: 36px;
-    width: 36px;
     display: inline-block;
     box-sizing: border-box;
     background-color: #fff;
     border: 2px solid #444;
     border-radius: 4px;
     float: right;
+    padding: 5px
   }
 
   .hamburger div {
-    position: absolute;
-    left: 4px;
     height: 4px;
     width: 24px;
     background-color: #444;
     border-radius: 2px;
-    display: inline-block;
     box-sizing: border-box;
     z-index: 2;
+    margin-top: 5px;
   }
 
-  .hamburger div:nth-of-type(1) {
-    top: 4px;
+  .hamburger div:first-child{
+    margin-top: 0px;
   }
 
-  .hamburger div:nth-of-type(2) {
-    top: 14px;
-  }
 
-  .hamburger div:nth-of-type(3) {
-    bottom: 4px;
-  }
 
   /*theme*/
   .theme_inner {
@@ -426,19 +430,23 @@ p {
   }
 
   .wwcd_content_right {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   /*l-work*/
   .GlidLayout_img {
-    padding: 40px 0 80px;
+    margin: 40px 0 80px;
     grid-template-rows: 300px;
     grid-template-columns: 300px;
     justify-content: center;
   }
 
-  .l-work_img:nth-child(3) {
-    padding-bottom: 80px;
+  .l-work_img:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .l-work_img:last-child{
+    margin-bottom: 0;
   }
 
   .l-work_bottom_all {
@@ -468,15 +476,15 @@ p {
   }
 
   .skills_boxes {
-    padding-bottom: 88px;
+    margin-bottom: 88px;
   }
 
   .skills_boxes:first-child {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 
   .skills_boxes:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   /*sns*/
