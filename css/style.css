@@ -257,7 +257,7 @@ img{
 
   /*sns*/
   .sns_inner {
-    padding: 200px 15px;
+    padding: 200px 0;
     display: flex;
     justify-content: center;
   }
@@ -360,7 +360,7 @@ img{
 
   /*sns*/
   .sns_inner {
-    padding: 200px 15px;
+    padding: 200px 0;
     display: flex;
     justify-content: center;
   }
